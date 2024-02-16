@@ -7,12 +7,8 @@ cloudinary.config({
 });
 
 const uploadFileConfig = async (filePath) => {
-  console.log(filePath);
   try {
-    const result = await cloudinary.uploader.upload(filePath, {
-      resource_type: "raw",
-    });
-    console.log(result);
+    const result = await cloudinary.uploader.upload(filePath);
     return result;
   } catch (error) {
     console.log(error.message);

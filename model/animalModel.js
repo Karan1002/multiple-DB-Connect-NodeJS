@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const animalModel = new mongoose.Schema({
-  A_ID: {
+  a_id: {
     type: String,
     require: true,
   },
-  file_url: {
+  image_url: {
     type: String,
     require: true,
   },
-  Animal_Name: {
+  animal_name: {
     type: String,
     require: true,
   },
